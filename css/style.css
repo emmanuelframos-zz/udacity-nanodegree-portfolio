@@ -102,12 +102,8 @@ img{
     text-align: center;
 }
 
-.job-1-img, .job-2-img, .job-3-img{
+.job-1-content, .job-2-content, .job-3-content{
     height: 70%
-}
-
-.job-1-text, .job-2-text, .job-3-text{
-    height: 30%
 }
 
 .job-2{
