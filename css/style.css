@@ -1,15 +1,22 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
 
-body, header, nav, footer, section, article, div {
+body,
+header,
+nav,
+footer,
+section,
+article,
+div {
     box-sizing: border-box;
 }
 
-header{
+header {
     box-shadow: 0 4px 0 0 rgba(0,0,0,0.6);
 }
 
@@ -18,99 +25,103 @@ h1 {
     font-size: 2.3em;
 }
 
-a, p, h1 {
+a,
+p,
+h1 {
     text-decoration: none;
     color: #2d3c49;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
 }
 
-img{
+img {
     transition: width 0.5s;
 }
 
-.container{
+.container {
     padding: 3em 3em 0 3em;
 }
 
-.header-container{
+.header-container {
     width: 100%;
     display: flex;
 }
 
-.header-image{
+.header-image {
     width: 30%;
     margin: auto;
 }
 
-.header-image img{
+.header-image-width {
     width: 25%;
 }
 
-.header-text{
+.header-text {
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-.header-text h1, .header-text p{
+.header-text h1,
+.header-text p {
     float: right;
     margin: 0;
 }
 
-.banner{
-    padding: 2em 0;
-    height: 30em;
+.banner {
+    padding: 2em 0 0 0;
+    height: 35em;
 }
 
-.banner img{
-    height: 100%;
-}
-
-.banner img{
+.banner-img {
     width: 100%;
+    max-height: 100%;
 }
 
-.job-title{
+.job-title {
     padding-left: 1em;
 }
 
-.job-title h2{
+.job-title h2 {
     color: #7d97ad;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 2em;
     letter-spacing: 2px;
 }
 
-.jobs{
+.jobs {
     display: flex;
 }
 
-.jobs p{
+.jobs p {
     font-size: 2em;
     letter-spacing: 3px;
     margin: 0.5em 0;
 }
 
-.jobs img{
+.jobs img {
     width: 100%;
 }
 
-.job-1, .job-2, .job-3{
+.job-1,
+.job-2,
+.job-3 {
     height: 100%;
     text-align: center;
 }
 
-.job-1-content, .job-2-content, .job-3-content{
+.job-1-content,
+.job-2-content,
+.job-3-content {
     height: 70%
 }
 
-.job-2{
+.job-2 {
     margin: 0 2em;
 }
 
-footer{
+footer {
     height:90px;
     color:#2d3c49;
     font-weight:bold;
@@ -120,50 +131,62 @@ footer{
     box-shadow: inset 0 4px 0 0 rgba(0,0,0,0.6);
  }
 
- @media(max-width: 400px){
-    .jobs p{
+ @media(max-width: 400px) {
+    .jobs p {
         font-size: 1.5em;
     }
 
-    .jobs a{
+    .jobs a {
         font-size: 0.8em;
     }
 
-    footer p{
+    footer p {
         font-size: 0.8em;
     }
  }
 
-@media(max-width: 640px){
-    .header-container{
+@media(max-width: 640px) {
+    .header-container {
         flex-direction: column;
     }
 
-    .header-image{
+    .header-image {
         text-align: center;
         width: 50%;
     }
 
-    .header-text{
+    .header-text {
         width: 100%;
     }
 
-    .header-text h1, .header-text p{
+    .header-text h1,
+    .header-text p {
         text-align: center;
         float: none;
     }
+
+    .banner {
+        padding: 2em 0 0 0;
+        height: 15em;
+    }
 }
 
-@media (max-width: 1174px){
-    .jobs{
+@media(min-width: 641px) and (max-width: 800px) {
+    .banner {
+        height: 20em;
+    }
+}
+
+@media (max-width: 1174px) {
+    .jobs {
         flex-direction: column;
     }
 
-    .job-2{
+    .job-2 {
         margin: 3em 0 0 0;
     }
 
-    .job-3{
+    .job-3 {
         margin: 3em 0 3em 0;
     }
  }
